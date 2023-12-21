@@ -25,8 +25,13 @@ SECRET_KEY = 'django-insecure-@t(_vouhk^o&igusai(c$v)md9a1my9^%-0h258wfp85lgazeb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'a942-14-42-62-20.ngrok-free.app',
+]
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://a942-14-42-62-20.ngrok-free.app'
+]
 
 # Application definition
 
@@ -48,6 +53,7 @@ INSTALLED_APPS = [
     'accounts',
 
 ]
+
 
 MIDDLEWARE = [
     'debug_toolbar.middleware.DebugToolbarMiddleware',
